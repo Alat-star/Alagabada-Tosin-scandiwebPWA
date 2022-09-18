@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,400;1,500;1,600&family=Nova+Script&family=Raleway:wght@300;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+.cart {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+  .shop_cart {
+    position: relative;
+    height: 55px;
+    box-sizing: border-box;
+    border: none;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    z-index: 9999;
+  
+    height: 100%;
+    left: 0;
+    top: 3.5rem;
+    width: 100%;
+    background-color: rgb(15, 13, 13, 0.5);
+  }
+  
+  .mini_cart {
+    background: #fff;
+    height: fit-content;
+    width: 30vw;
+    position: fixed;
+    right: 5rem;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-family: Raleway;
+  }
+  
+  .bold_text {
+    font-weight: 700;
+    font-family: Raleway;
+  }
+  
+  .cart_name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0px 0px 16px;
+    font-family: Raleway;
+  }
+  
+  .cart_brand {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0px 0px 12px;
+    font-family: Raleway;
+  }
+  
+  .cart_amount {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0px 0px 12px;
+  }
+  
+  .cartItem_Container {
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    margin-top: 1rem;
+  }
+  
+  .cart_image {
+    width: 105px;
+    height: 137px;
+    float: right;
+  }
+  
+  .cart_button_one {
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border: 1px solid #000;
+    margin-left: 3rem;
+    cursor: pointer;
+    font-family: Raleway;
+  }
+  
+  .cart_button_two {
+    width: 150px;
+    height: 50px;
+    background: #5ece7b;
+    color: #fff;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-family: Raleway;
+  }
+  
+  .badge {
+    position: absolute;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    top: 18px;
+    left: 2rem;
+    z-index: 1;
+    border-radius: 60px;
+    background: #1d1f22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Raleway;
+  }
+  
+  .badge_text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+  }
+  .cartItem_maxcontainer {
+    overflow-y: scroll;
+    width: 100%;
+    height: fit-content;
+    max-height: 50vh;
+    position: relative;
+  }
+  .cartItem_innerContainer {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 60px;
+  }
+  .cartItem_totalCon {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .cartItem_amount {
+    float: right;
+    margin-right: 1rem;
+    font-weight: 700;
+  }
+  .cartItem_link {
+    text-decoration: none;
+    color: black;
+  }
+  .cartItem_button {
+    margin-top: 1rem;
+  }
+  .item_count {
+    background: #fff;
+    border: 1px solid #000;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .item_quantity {
+    width: 32px;
+    height: 32px; 
+    background: #fff;
+  }
+  
+  .item_count_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+    .mini_cart {
+      right: 0rem;
+      width: 80%;
+    }
+  
+    .cart_button_one {
+      width: 100px;
+      height: 50px;
+    }
+  
+    .cart_button_two {
+      width: 100px;
+      height: 50px;
+    }
+  
+    .cart {
+      margin-top: 5rem;
+    }
+  
+    .badge {
+      top: 4.5rem;
+      right: 0.8rem;
+    }
+  }
+  

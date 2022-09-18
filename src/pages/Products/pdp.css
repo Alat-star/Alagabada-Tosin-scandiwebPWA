@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,400;1,500;1,600&family=Nova+Script&family=Raleway:wght@300;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+.pdp_container {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .image_section {
+    width: 100%;
+    display: flex;
+    margin: 40px 0px 0px 10rem;
+  }
+  .img_col {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0;
+  }
+  
+  .image_column {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow-y: scroll
+  }
+  .product_name {
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Raleway;
+  }
+  .product_brand {
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+    font-family: Raleway;
+  }
+  .outof_stock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: #8d8f9a;
+    margin: 0;
+  }
+  .pdp_image {
+    max-width: 400px;
+    max-height: 610px;
+    margin-left: 20px;
+  }
+  .pdp_name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: Raleway;
+  }
+  .pdp_button {
+    width: 50%;
+    border: none;
+    height: 50px;
+    background: #5ece7b;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: Raleway;
+  }
+  .loader_img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+  .pdp_innerCon {
+    margin-top: 2rem;
+  }
+  
+  .pdp_amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+  }
+  .pdp_price {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .pdp_down {
+    margin-top: 3rem;
+  }
+  @media screen and (max-width: 480px) {
+    .pdp_container {
+      display: flex;
+      flex-direction: column;
+    }
+    .image_section {
+      margin: 0 0 0 0;
+    }
+    .image_column {
+      display: none;
+    }
+    .pdp_image {
+      max-width: 250;
+      max-height: 250px;
+    }
+    .attribute_section {
+      margin-left: 2rem;
+    }
+  }
+  

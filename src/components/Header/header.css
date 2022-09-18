@@ -1,0 +1,45 @@
+.header_container {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+  }
+  .categoryname {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .header_grid_one {
+    margin-left: 2rem;
+    background: #fff;
+  }
+  .header_grid_two {
+    background: #fff;
+  }
+  .header_grid_three {
+    display: flex;
+    background: #fff;
+  }
+  .header_logo {
+    margin: 1rem 0 0 50%;
+  }
+  @media screen and (max-width: 480px) {
+    .header_container {
+      display: flex;
+  
+      height: 18vh;
+      background: #fff;
+    }
+    .categoryname {
+      position: absolute;
+    }
+    .header_logo {
+      margin: 5rem 0 0 10%;
+    }
+  }
+  

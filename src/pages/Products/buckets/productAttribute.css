@@ -1,0 +1,31 @@
+.text_box {
+    max-width: 40px;
+    max-height: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  .container {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .active_text {
+    background-color: #000;
+    color: #fff;
+  }
+  .swatch_box {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .swatch_active {
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    border-radius: 100%;
+  }
+  
